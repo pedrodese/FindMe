@@ -39,6 +39,7 @@ func Gerar() *cli.App {
 	return app
 }
 
+// essa função busca os ips de um determinado host
 func buscarIps(c *cli.Context) {
 	host := c.String("host")
 
@@ -53,6 +54,7 @@ func buscarIps(c *cli.Context) {
 	}
 }
 
+// essa função busca os servidores de um determinado host
 func buscarServidores(c *cli.Context) {
 	host := c.String("host")
 
